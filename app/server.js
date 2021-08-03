@@ -4,8 +4,9 @@ const PORT = process.env.PORT || 5000
 const path = require('path');
 
 
+app.use(express.static(path.join(__dirname, '../tempClient/build')));
 
-app.use(express.static('../tempClient')) // Works locally, untested on heroku
+// app.use(express.static('../tempClient')) // Works locally, untested on heroku
 
 // app.use(express.static(path.join(__dirname, '../tempClient'))); // Works locally, untested on heroku
 
