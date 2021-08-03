@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AdamAranha/herokutest/issues"
   },
-  "homepage": "https://github.com/AdamAranha/herokutest#readme"
+  "homepage": "https://github.com/AdamAranha/herokutest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
