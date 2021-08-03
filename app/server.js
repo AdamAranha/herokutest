@@ -18,11 +18,11 @@ const path = require('path');
 //     res.sendFile(path.join(__dirname, '../tempClient/build', 'index.html'));
 // }) // This works in heroku
 
-app.use(express.static(path.join(__dirname, '../client/build'))); // This works
+app.use(express.static(path.join(__dirname, '../client/build'))); // 
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-}) // This works in heroku
+}) // Not Found
 
 
 
