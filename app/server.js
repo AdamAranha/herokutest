@@ -14,8 +14,8 @@ app.use(express.static('../tempClient')) // Works locally, untested on heroku
 // })  // Did not work in heroku - Internal Server Error
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../tempClient', 'index.html'));
-})
+    res.sendFile(path.join(__dirname, '../tempClient/build', 'index.html'));
+}) // This works in heroku
 
 
 app.listen(PORT, () => {
